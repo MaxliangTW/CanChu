@@ -1,0 +1,102 @@
+.sidebar{
+    width: 324px;
+    height: 350px;
+    background-color: white;
+    margin-top: 24px;
+    margin-left: 135px;
+    border-radius: 20px;
+    gap: 1%;
+    border: 1px solid #e8e6e6e0;
+    .sidebarfeature{
+        display: flex;
+        flex-direction: column;
+        padding: 6px 0px;
+        .my{
+        display: inline-flex;
+        align-items: center;
+        margin-bottom: 12px;
+            .myPicture{
+                width: 42px;
+                height: 42px;
+                background-color: #D9D9D9;
+                border-radius: 50%;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            .userName{
+                font-weight: 700;
+                line-height: 24px;
+                font-size: 18px;
+                color: #000000;
+                font-weight:2000;
+            }
+        }
+        .myFriends{
+            display: inline-flex;
+            align-items: center;
+            border-top: 1px solid #dcdcdc;
+            margin: 0 10px;
+            .friendsIcon{      
+                margin-left: 6px;
+                margin-right: 15px;
+            }
+            .myFriendlist{
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 24px;
+                font-weight:bold;
+                color: #767676;
+            }
+        }
+        .buddy{
+            // display: flex;
+            // flex-direction: column;
+            // align-items: center;
+            display: inline-flex;
+            flex-wrap: wrap;
+            align-items: center;
+            flex: 0 0 100%;
+            margin: 3px 0;
+            .buddyPicture{
+                width: 42px;
+                height: 42px;
+                border-radius: 50%;
+                margin-left: 10px;
+                margin-right: 10px;
+                object-fit: cover;
+            }
+            .buddyText{
+                font-weight: 700;
+                line-height: 24px;
+                font-size: 18px;
+                color: #000000;
+                font-weight:bold; 
+            }   
+        }
+        .viewAll{
+            display: inline-flex;
+            align-items: center;
+            margin: 3px 0;
+            .viewAllIcon{
+                width: 39px;
+                height: 39px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            .viewAllText{
+                font-weight: 500;
+                line-height: 24px;
+                font-size: 18px;
+                color: #000000;
+                text-decoration: underline;
+            }
+        }
+        .CanChuAbout{
+            margin-left: 25px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #525252;
+        }
+    }
+}

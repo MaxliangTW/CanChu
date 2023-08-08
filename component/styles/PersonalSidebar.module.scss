@@ -1,0 +1,107 @@
+.sidebar{
+    width: 370px;
+    height: auto;
+    background-color: white;
+    margin-top: 24px;
+    margin-left: 135px;
+    border-radius: 20px;
+    gap: 1%;
+    border: 1px solid #e8e6e6e0;
+    .Personalsidebarfeature{
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+        margin-right: 15px;
+        .AddPersonalText{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 343px;
+            height: 40px;
+            margin-top: 23px;
+            background-color: #5458F7;
+            font-family: outfit;
+            font-weight: 700;
+            color: #ffffff;
+            border-radius: 6px;
+            border: 1px solid #5458F7;
+            cursor: pointer;
+            &:disabled {
+                opacity: 0.6;
+                cursor: not-allowed;
+              }
+        }
+        .PersonalAbout{
+            font-size: 18px;
+            line-height: 24px;
+            color: #525252;
+            font-weight: bolder;
+            margin-top: 20px;  
+        }
+        .introduction,
+        .Tags {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            color: #5C5C5C;
+            margin-top: 10px;
+            width: 327px;
+            resize: vertical; 
+            &.edit-mode {
+                border-radius: 10px;
+                background-color: #F0F2F5;
+                padding: 8PX;
+                border: 1px solid #BFBFBF;
+            }
+        }
+        .AboutTags{
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 700;
+            margin-top: 20px; 
+            color: #525252; 
+        }
+        .Buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            button {
+                width: 100px;
+                height: 40px;
+                margin: 0 10px;
+                font-family: outfit;
+                font-weight: 700;
+                color: #ffffff;
+                border-radius: 6px;
+                cursor: pointer;
+                transition: opacity 0.2s ease;
+                &.confirm {
+                    background-color: #5458F7;
+                    font-family: outfit;
+                    font-weight: 700;
+                    color: #ffffff;
+                    border-radius: 6px;
+                    border: 1px solid #5458F7;
+                    &:hover {
+                      opacity: 0.8;
+                    }
+                  }
+                  &.cancel {
+                    background-color: #D3D3D3;
+                    border: 1px solid #D3D3D3;
+                    &:hover {
+                      opacity: 0.8;
+                    }
+                }
+            }
+        }
+        .Aboutus{
+            font-family:Helvetica Neue ;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #525252;
+            margin-bottom: -50px;
+        }
+    }
+}

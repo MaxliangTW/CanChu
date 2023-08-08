@@ -1,0 +1,178 @@
+.sginupfrom{
+    height: 619px;
+    width: 848px;
+    display: flex;
+    border: 1px solid #d3d3d38f;
+    border-radius:20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    &.loginWidth{
+        height: 619px;
+    }
+    &.signupWidth{
+        height: 783px;
+    }
+    @media (max-width: 848px) {
+        height: 100vh;
+        width: 100%;
+    }
+    
+    .loginSection{
+        height: 100%;
+        width: 65%;        
+        background-color: white;
+        border-radius:20px 0 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .logoPhoto{
+            width: 114px;
+            height: 29px;
+            flex-shrink: 0;
+        }
+        .passtext{
+            font-size: 36px;
+            line-height: 24px;
+            color: #000000;
+            font-family: outfit;
+            font-weight: 600;
+        }
+        .nameSection{
+            width: 336px;
+            margin-bottom: 15px;
+            .nameText{
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: #000000;
+                font-family: outfit;
+                margin: 0; 
+            }
+            .AddnameText{
+                    width: 100%;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #000000;
+                    border: 1px solid #5458F7;
+                    border-radius:6px;
+                    padding: 8px;
+                    margin: 2px;
+                }
+                .AddnameText::placeholder {
+                    color: #BFBFBF;
+                }
+            }
+        .emailSection{
+            width: 336px;
+            margin-bottom: 15px;
+            .emailText{
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: #000000;
+                font-family: outfit;
+                margin: 0;
+            }
+            .AddemailText{
+                width: 100%;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: #000000;
+                border: 1px solid #5458F7;
+                border-radius:6px;
+                padding: 8px;
+                margin: 2px;
+            }
+            .AddemailText::placeholder {
+                color: #BFBFBF;
+            }
+        }
+        .passwordSection{
+            width: 336px;
+            margin-bottom: 15px;
+            .passText{
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: #000000;
+                font-family: outfit;
+                margin: 2px;
+            }
+            .AddpasswordText{
+                width: 100%;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: #000000;
+                border: 1px solid #5458F7;
+                border-radius:6px;
+                padding: 8px;
+            }
+        }
+        .confirmPasswordSection{
+            width: 336px;
+            margin-bottom: 15px;
+            .confirmPassText{
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: #000000;
+                font-family: outfit;
+                margin: 2px;
+            }
+            .AddconfirmPasswordText{
+                width: 100%;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: #000000;
+                border: 1px solid #5458F7;
+                border-radius:6px;
+                padding: 8px;
+            }
+        }
+        .purpleButton{
+            width: 140px;
+            height: 40px;
+            background-color: #5458F7;
+            color: white;
+            border-radius:6px;
+            border: 1px solid #5458F7;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .purpleLinkText{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #000000;
+            .purpleLink{
+                color: #5458F7;
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+    .rightSection{
+        height: 100%;
+        width: 35%;
+        background-color: #5458F7;
+        border-radius: 0 20px 20px 0;
+        position: relative;
+    }
+    .CanChuAbout{
+        position: absolute;
+        bottom: -50px;
+        right: 0px;
+        color: #525252;
+    }
+}
