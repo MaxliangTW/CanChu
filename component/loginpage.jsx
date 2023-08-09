@@ -17,10 +17,10 @@ function LoginPage() {
 
   const validationSchema = Yup.object().shape({
     name: !isLogin && Yup.string().required('使用者名稱為必填項目'),
-    email: Yup.string().email('請輸入有效電子郵件').required('電子郵件為必填項目'),
+    email: Yup.string().email('請輸入有效的電子郵件').required('電子郵件為必填項目'),
     password: Yup.string()
     .required('密碼為必填項')
-    .matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/, '密碼需包含大小寫字母和數字，且長度至少為八個字符'),
+    .matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/, '密碼需包含大小寫字母和數字，且長度至少八個字符'),
     confirmPassword: !isLogin && Yup.string().oneOf([Yup.ref('password'), null], '密碼不一致'),
   });
 
