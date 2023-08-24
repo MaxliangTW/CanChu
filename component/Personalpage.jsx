@@ -51,7 +51,6 @@ function PersonalPage() {
   }, [accessToken, setPosts]);
 
   useEffect(() => {
-    // 從 cookie 中獲取用戶的照片並將其設置為 myPhoto 的初始值
     const storedPhoto = cookies.userPhoto;
 
     if (storedPhoto && !myPhoto) {
@@ -81,7 +80,6 @@ function PersonalPage() {
       console.log(response);
       setMyPhoto(response.data.data.picture);
 
-      // 將用戶的照片保存在 cookie 中
       setCookie(null, 'userPhoto', response.data.data.picture, {
         maxAge: 30 * 24 * 60 * 60, 
         path: '/',

@@ -16,7 +16,7 @@ const shouldHideData = true;
 
 
 function HomePage() {
-  const [myPhoto, setMyPhoto] = useState("/image/5NAGJfl.png");
+  const [myPhoto, setMyPhoto] = useState("/image/下載.png");
   // const [posts, setPosts] = useState([]);
   const [userName, setUserName] = useState('');
   const cookies = parseCookies();
