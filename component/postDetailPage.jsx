@@ -186,7 +186,7 @@ const PostDetailPage = ({ post, shouldHideData, userPhoto }) => {
         )}
       </div>
       <div className={styles.reach}>
-        <p>{likeCount}人喜歡這則貼文</p>
+        <p>{likeCount}位喜歡這則貼文</p>
         {shouldHideData ? (
           <Link href="/post/[postId]" as={`/post/${post.id}`}>
             <p>{comment_count}則留言</p>
