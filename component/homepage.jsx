@@ -21,7 +21,6 @@ function HomePage() {
   const [userName, setUserName] = useState('');
   const cookies = parseCookies();
   const accessToken = cookies.accessToken || '';
-  // const [scrollPosts, setScrollPosts, nextCursor] = Scroll();
   const [posts, setPosts, nextCursor, hasMorePosts] = Scroll();
 
   useEffect(() => {
